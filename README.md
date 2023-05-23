@@ -1,22 +1,36 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Dice Game" />
+  <img src="./.github/app.gif" alt="WebDevelopment" />
 
   &#xa0;
 
   <!-- <a href="https://webdevelopment.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Dice Game</h1>
+<h1 align="center">Personal Site</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/r00kieAd/Dice-Game?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/r00kieAd/Personal-Site?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/r00kieAd/Dice-Game?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/r00kieAd/Personal-Site?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/r00kieAd/Dice-Game?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/r00kieAd/Personal-Site?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/r00kieAd/Dice-Game?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/r00kieAd/Personal-Site?color=56BEB8">
+
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/webdevelopment?color=56BEB8" /> -->
+
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/webdevelopment?color=56BEB8" /> -->
+
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/webdevelopment?color=56BEB8" /> -->
 </p>
+
+<!-- Status -->
+
+<h4 align="center"> 
+	🚧  Personal Site 🚀 Under construction...  🚧
+</h4> 
+
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -31,33 +45,31 @@
 
 ## :dart: About ##
 
-This is a simple dice game where player with total of highest dice rolls wins.
+This is my Personal Website that I made while learning Web Development. This site basically describes about myself and the experience I had while working and learning.I am still on Web Development Course so there lot of things to be implemented. Hope you like it.
 
 ## :sparkles: Features ##
 
-1. A rolling dice animation will come up when user hovers on the roll button.
-2. Default dice image will change based on the random result of rolling dice.
-3. Each Dice has random neon outlines to distinguish easly.
-4. Player to score 100 or more than 100 will win.
-5. Roll button will change to refresh for resetting the scores and status of the page.
-6. A readme button will always be visible for user to visit this page for any instructions of information about the website.
+1. Has a Navbar that retracts itself on smaller screens.
+2. Images and Contents shrink and change positions according to screen size.
+3. Build Projects like Dice game and Age calculator are attached with this site.
+4. More features to be added soon.
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [HTML](https://www.w3schools.com/html/default.asp)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/default.asp)
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
 ## :white_check_mark: Requirements ##
 
-You need to open this website atleast on a tablet sized screen. This website hasn't been optimized for mobile screens.
-
+This site will open and work in all screens except for a linked app, dice game. That web app requires at least tablet size screen to run.
 
 ## :memo: License ##
 
-This project is under ownership of Adhyatma Dwivedi.
+This project is under license of Adhyatma Dwivedi.
 
 
 Made with :heart: by <a href="https://github.com/r00kieAd" target="_blank">Adhyatma Dwivedi</a>
