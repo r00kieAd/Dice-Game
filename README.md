@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="https://png.pngtree.com/png-vector/20201112/ourmid/pngtree-two-realistic-white-dices-vector-png-image_2423974.jpg" alt="Dice Game" width="350px" height="300px" />
+  <img src="dice.png" alt="Dice Game" />
 
   &#xa0;
 
