@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Dice Game" />
+  <img src="[./.github/app.gif](https://freebiehive.com/wp-content/uploads/2023/08/Dice-PNG.jpg)" alt="Dice Game" width="500px" height="200px" />
 
   &#xa0;
 
@@ -57,7 +57,7 @@ You need to open this website atleast on a tablet sized screen. This website has
 
 ## :memo: License ##
 
-This project is under ownership of Adhyatma Dwivedi.
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
 
 Made with :heart: by <a href="https://github.com/r00kieAd" target="_blank">Adhyatma Dwivedi</a>
