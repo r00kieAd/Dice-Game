@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="[./.github/app.gif](https://freebiehive.com/wp-content/uploads/2023/08/Dice-PNG.jpg)" alt="Dice Game" width="500px" height="200px" />
+  <img src="https://freebiehive.com/wp-content/uploads/2023/08/Dice-PNG.jpg" alt="Dice Game" width="500px" height="200px" />
 
   &#xa0;
 
