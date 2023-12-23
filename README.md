@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="https://freebiehive.com/wp-content/uploads/2023/08/Dice-PNG.jpg" alt="Dice Game" width="500px" height="200px" />
+  <img src="https://png.pngtree.com/png-vector/20201112/ourmid/pngtree-two-realistic-white-dices-vector-png-image_2423974.jpg" alt="Dice Game" width="350px" height="300px" />
 
   &#xa0;
 
