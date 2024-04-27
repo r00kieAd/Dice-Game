@@ -8,24 +8,26 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60rem;
+    width: 60vw;
     height: auto;
-    border: 1px solid white;
 }
 
 #mainUI {
     text-align: center;
     padding: 1% 0;
+    width: inherit;
 }
 
 .status {
     color: #4CCD99;
     word-spacing: 3px;
     font-size: 50px;
+    margin-bottom: 5%;
 }
 
 #displayArea {
     display: flex;
+    width: auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -47,9 +49,14 @@ body {
 .playerContainer {
     display: flex;
     justify-content: space-between;
-    width: 90px;
-    margin-top: 10%;
+    align-items: normal;
+    width: 120px;
+    margin-top: 15%;
     font-size: 20px;
+    text-align: left;
+    font-weight: 200 !important;
+    border-top: 1px solid #FFE5AD;
+    padding: 5% 10px 0 10px;
 }
 
 .playerNames {
@@ -57,16 +64,27 @@ body {
 }
 
 .playerScores {
-    color: #F0F3FF;
+    color: #FFE5AD;
+    /* font-size: 18px; */
+}
+
+#pn2, #ps2 {
+    font-size: 19px;
+    font-weight: lighter;
 }
 
 .dice {
-    width: 250px;
+    width: 200px;
+    height: auto;
+}
+
+.d1, .d2 {
+    width: inherit;
     height: auto;
 }
 
 .centerDice {
-    width: 100px;
+    width: 120px;
     height: auto;
 }
 
@@ -76,4 +94,7 @@ body {
     height: 40px;
     line-height: 30px;
     color: #F0F3FF;
+    margin-top: 5%;
 }
+
+/* first breakpoint at 880px, then 670px */
