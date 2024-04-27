@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="dice.png" alt="Dice Game" />
+  <img src="images/dice-icon.png" alt="Dice Game" />
 
   &#xa0;
 
