@@ -1,0 +1,79 @@
+body {
+    background-color: #222831;
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+    height: auto;
+    border: 1px solid white;
+}
+
+#mainUI {
+    text-align: center;
+    padding: 1% 0;
+}
+
+.status {
+    color: #4CCD99;
+    word-spacing: 3px;
+    font-size: 50px;
+}
+
+#displayArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#diceUI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.diceContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.playerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.playerNames {
+    color: #9EDDFF;
+}
+
+.playerScores {
+    color: #F0F3FF;
+}
+
+.dice {
+    width: 250px;
+    height: auto;
+}
+
+.centerDice {
+    width: 100px;
+    height: auto;
+}
+
+#roll {
+    font-size: 18px;
+    width: 70px;
+    height: 40px;
+    line-height: 30px;
+    color: #F0F3FF;
+}
