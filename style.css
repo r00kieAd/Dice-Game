@@ -3,6 +3,78 @@ body {
     font-family: "Bubblegum Sans", sans-serif;
 }
 
+#menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    height: auto;
+    padding: 1%;
+    border: 1px solid #F0F3FF;
+    border-radius: 10px;
+    background-color: #F0F3FF;
+    z-index: 1;
+    font-size: 20px;
+}
+
+#cls {
+    position: absolute;
+    top: 1%;
+    right: 1.5%;
+    color: #C70039;
+    width: auto;
+    height: auto;
+}
+
+#cls i:hover {
+    cursor: pointer;
+}
+
+#err {
+    font-size: 16px;
+    display: none;
+    color: red;
+}
+
+.scoresheet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scores {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.legends {
+    color: #222831;
+}
+
+.rangeInput {
+    display: flex;
+    align-items: center;
+}
+
+label[for="betPlayer"], .thrValue {
+    color: #1D2B53;
+}
+
+.butt {
+    width: inherit;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#selectedOptions {
+    width: 80px;
+    height: 40px;
+    line-height: 30px;
+}
+
 #main {
     position: absolute;
     top: 50%;

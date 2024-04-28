@@ -1,14 +1,48 @@
 // entry point
-const threshold = 10;
+$(".thrValue").text($('#thr').val());
+$('#thr').on('change', function () {
+    $(".thrValue").text($(this).val());
+});
+let betPlayer = '';
+let threshold = 10;
 $('#roll').click(
     function () {
         if ($(this).text() == 'Reset') {
             resetGame();
             return;
         }
+        if ($(this).text() == 'Menu') {
+            $('#menu').slideDown();
+            return;
+        }
         startGame();
     }
 )
+
+$('#cls i').click(
+    function () {
+        $('#menu').slideUp();
+    }
+)
+
+$('#selectedOptions').click(
+    function () {
+        threshold = parseInt($(".thrValue").text());
+        const inputs = Array.from($('input[name="betPlayer"]'));
+        let empty = true;
+        inputs.forEach((e) => {
+            if (e.checked) {
+                betPlayer = e.value;
+                $('#roll').text('Roll!');
+                $('.status').text('Start Rolling!!')
+                $('#menu').slideUp();
+                empty = false;
+                $('#err').hide();
+            }
+        })
+        if (empty) $('#err').fadeIn();
+    }
+);
 
 function resetGame() {
     $('#pn2').css('color', '#9EDDFF');
@@ -18,7 +52,7 @@ function resetGame() {
     $('.status').html('Place your bet!');
     $('.d1').attr('src', 'images/casino.png');
     $('.d2').attr('src', 'images/casino.png');
-    $('#roll').text('Bet!');
+    $('#roll').text('Menu');
 }
 
 function startGame() {
@@ -80,7 +114,7 @@ function evaluateScore(a, b) {
         $('#pn2').css('color', '#C70039');
         if (score1 >= threshold) {
             console.log(`${score1} won over ${score2}`);
-            declareWinner('Player1');
+            declareWinner('Player1', betPlayer);
         } else {
             console.log(`${score1} > ${score2}`);
             $('.status').text('Player 1 is ahead..');
@@ -90,7 +124,7 @@ function evaluateScore(a, b) {
         $('#pn1').css('color', '#C70039');
         if (score2 >= threshold) {
             console.log(`${score2} won over ${score1}`);
-            declareWinner('Player2');
+            declareWinner('Player2', betPlayer);
         } else {
             console.log(`${score2} > ${score1}`);
             $('.status').text('Player 2 is ahead..');
@@ -98,10 +132,19 @@ function evaluateScore(a, b) {
     }
 }
 
-function declareWinner(winner) {
-    console.log('declaring winner');
+function declareWinner(winner, betPlayer) {
     if (winner == 'none') $('.status').html(`It's a tie! <i class="fa-solid fa-ghost"></i>`);
-    if (winner != 'none') $('.status').html(`${winner} won the game!! <i class="fa-solid fa-trophy"></i>`);
+    if (winner != 'none') {
+        if (winner == betPlayer) {
+            $('.status').html(`You won the bet!! <i class="fa-solid fa-trophy"></i>`);
+            $('#win').text(parseInt($('#win').text())+1);
+        } else {
+            $('.status').html(`You lost the bet!! <i class="fa-regular fa-face-sad-tear"></i>`);
+            $('#loss').text(parseInt($('#loss').text())+1);
+        };
+    } else {
+        $('#draw').text(parseInt($('#draw').text())+1);
+    }
     $('#roll').text('Reset');
 }
 
