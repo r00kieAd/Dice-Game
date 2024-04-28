@@ -33,7 +33,7 @@ function shuffleDices(shuffle) {
                 clearInterval(interval);
                 resolve([num1+1, num2+1]);
             }
-        }, 3600);
+        }, 3500);
     });
 }
 
@@ -44,20 +44,40 @@ function evaluateScore(a, b) {
     let score2 = parseInt(ps2.text());
     score1 += a;
     score2 += b;
-    if (score1 > score2) {
+    ps1.text(String(score1));
+    ps2.text(String(score2));
+
+
+    if (score1 > score2 && score1 < 100) {
+        console.log(`${score1} > ${score2} && ${score1} < 100`);
         $('.status').text('Player 1 is ahead..');
         $('#pn1').css('color', '#4CCD99');
         $('#pn2').css('color', '#C70039');
-    } else if (score2 > score1) {
+    } else if (score2 > score1 && score2 < 100) {
+        console.log(`${score2} > ${score1} && ${score2} < 100`);
         $('.status').text('Player 2 is ahead..');
         $('#pn2').css('color', '#4CCD99');
         $('#pn1').css('color', '#C70039');
-    } else {
+    } else if (score1 >= 100 && score2 < 100) {
+        console.log(`${score1} >= 100 && ${score2} < 100`);
+        declareWinner('Player1');
+    } else if (score2 >= 100 && score1 < 100) {
+        console.log(`${score2} >= 100 && ${score1} < 100`);
+        declareWinner('Player2');
+    } else if (score1 >= 100 && score1 == score2) {
+        console.log(`${score1} >= 100 ${score1} == ${score2}`);
+        declareWinner('tied')
+    }
+     else {
+        console.log(`${score1} == ${score2}`);
         $('.status').text('Scores are tied..');
         $('#pn1').css('color', '#4CCD99');
         $('#pn2').css('color', '#4CCD99');
     }
-    ps1.text(String(score1));
-    ps2.text(String(score2));
+}
+
+function declareWinner(winner) {
+    if (winner == 'tied') $('.status').html(`It's a tie! <i class="fa-solid fa-ghost"></i>`);
+    if (!winner == 'tied') $('.status').html(`${winner} won the game!! <i class="fa-solid fa-trophy"></i>`);
 }
 

@@ -31,7 +31,7 @@
 
 ## :dart: About ##
 
-This is a simple dice game where player with total of highest dice rolls wins.
+Working on updates and redesiging...
 
 ## :sparkles: Features ##
 
@@ -60,7 +60,7 @@ You need to open this website atleast on a tablet sized screen. This website has
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
 
-Made with :heart: by <a href="https://github.com/r00kieAd" target="_blank">Adhyatma Dwivedi</a>
+Made with :hammer: by <a href="https://github.com/r00kieAd" target="_blank">Adhyatma Dwivedi</a>
 
 &#xa0;
 
