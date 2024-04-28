@@ -31,7 +31,7 @@
 
 ## :dart: About ##
 
-This is a dice game that I made for my practince and fun. It has a betting systmem without money where you guess which player will win and when your guess is right, you are given 1 point. Player(2 bots) which will score more than or equal to threshold point will win the game. This scores is evaluated at each dice roll. The numbers that a respective dice will display will be added to player score until it reaches threshold. You can change this threshold from 10 - 100. Have fun!
+This is a dice game that I made for my practince and fun. It has a betting system without money where you guess which player will win and when your guess is right, you are given 1 point. Player(2 bots) that will score more than or equal to threshold point will win the game. These scores are evaluated at each dice roll. The numbers that a respective dice will display will be added to player score until it reaches threshold. You can change this threshold from 10 - 100. Have fun!
 
 ## :sparkles: Features ##
 
