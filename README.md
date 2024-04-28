@@ -31,16 +31,14 @@
 
 ## :dart: About ##
 
-Working on updates and redesiging...
+This is a dice game that I made for my practince and fun. It has a betting systmem without money where you guess which player will win and when your guess is right, you are given 1 point. Player(2 bots) which will score more than or equal to threshold point will win the game. This scores is evaluated at each dice roll. The numbers that a respective dice will display will be added to player score until it reaches threshold. You can change this threshold from 10 - 100. Have fun!
 
 ## :sparkles: Features ##
 
-1. A rolling dice animation will come up when user hovers on the roll button.
-2. Default dice image will change based on the random result of rolling dice.
-3. Each Dice has random neon outlines to distinguish easly.
-4. Player to score 100 or more than 100 will win.
-5. Roll button will change to refresh for resetting the scores and status of the page.
-6. A readme button will always be visible for user to visit this page for any instructions of information about the website.
+1. Has a interactive menu to place your bets(no money) and winning threshold. It also displays rules.
+2. Dice shuffling animations.
+3. Score counter for wins, losses and draws.
+4. Validation is done on slecting the game preferences.
 
 ## :rocket: Technologies ##
 
@@ -48,11 +46,14 @@ The following tools were used in this project:
 
 - [HTML](https://www.w3schools.com/html/default.asp)
 - [CSS](https://www.w3schools.com/css/default.asp)
+- [Bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JQuery](https://www.w3schools.com/jquery/default.asp)
+- [VSCode](https://code.visualstudio.com/)
 
 ## :white_check_mark: Requirements ##
 
-You need to open this website atleast on a tablet sized screen. This website hasn't been optimized for mobile screens.
+You need to open this website atleast on a tablet sized screen. This website hasn't been optimized for mobile screens. Minimum screen width required: 1000px.
 
 
 ## :memo: License ##
